@@ -1,0 +1,58 @@
+<!--@Author : Adnan Ali-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Page Title -->
+		<title>Real Time live Crypto Prices</title>
+
+		<!-- Meta Tags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+
+		<!-- Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="assest/css/style.css">
+
+		<!-- Libs -->
+		<script src="assest/libs/vue.js"></script>
+   		<script src="assest/libs/axios.min.js"></script>
+   	</head>
+   	<body>
+   		<!-- Start UIBK Javascript Error Handler -->
+   		<noscript>
+   			<div class="UIBK_JS_MSG">
+   				<img src="assest/images/js_error_handler.png">
+   				<div class="uibk-js_error-msg">
+					<h1>Ohh,Noo! :(</h1>
+	   				<h2>
+	   					Maybe Javascript in your browser is disabled, please active javascript to see the content.
+	   					<br><br>
+	   					We can't live without JavaScript :-)
+	   				</h2>
+   				</div>
+   			</div>
+   		</noscript>
+   		<!-- End UIBK Javascript Error Handler -->
+
+   		<!-- Start Crypto Content -->
+		<section class="LiveCryptoPrice"  id="UIBKLIVECRYTOEXCHANGE">
+			<div class="UIBKPage-Title"> Real Time Crypto Prices
+			<ul class="UIBK-MENU">
+				<li><a href="#" target="_blank"><span>On GitHub</span></a></li>
+				<li><a href="https://git.uibk.ac.at/ifi-admins/adnan-python-projects/tree/master/JavaScript/Crypto/LiveCryptoPrices" target="_blank"><span>On GitLab</span></a></li>
+				<li><a href="license.html"><span>License</span></a></li>
+			</ul>
+			 </div>
+			<div class="UIBKContent-Price">
+				<div class="UIBKCryptoCurrency" v-for="(UIBK_CRYPTO_PRICE_EXCHANGE, UIBK_CRYPTO_NAME) in results">
+					<img src="assest/images/exchange.svg">
+					<div class="UIBKCurrencyPricy">
+						<h3>{{ UIBK_CRYPTO_NAME }}</h3>
+						<h2>${{ UIBK_CRYPTO_PRICE_EXCHANGE.USD }}</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Crypto Content -->
+		<script src="assest/js/main.js"></script>
+	</body>
+</html>

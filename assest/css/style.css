@@ -1,0 +1,129 @@
+/* @Author : Adnan Ali */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+*{margin: 0;padding: 0;font-family: 'Roboto', sans-serif;outline: none;text-decoration: none;color: #222;}
+body {padding: 0;margin: 0;font-family: 'Roboto', sans-serif;color: #222;background: #eceff2;}
+.UIBKPage-Title{text-align: center;padding: 10px;color: #444;font-weight: 300;font-size: 40px;margin-top: 30px;margin-bottom: -10px;}
+.UIBKContent-Price {margin: 50px auto;width: 700px;background: #FFF;border-radius: 5px;display: table;}
+.UIBKCryptoCurrency {display: flex;float: left;width: 25%;padding: 25px;border-bottom: 20px solid #eceff2;}
+.UIBKCryptoCurrency:last-child{border-right:none;}
+.UIBKCryptoCurrency img {width: 50px;height: 50px;object-fit: cover;}
+.UIBKCurrencyPricy {margin-left: 12px;}
+.UIBKCurrencyPricy {margin-left: 12px;}
+.UIBKCurrencyPricy h3 {text-transform: uppercase;color: #777;font-size: 20px;}
+.UIBKCurrencyPricy h2 {font-size: 25px;}
+
+noscript {
+    background: #FFFFFF;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+}
+.UIBK_JS_MSG {
+    display: flex;
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.UIBK_JS_MSG img {
+    opacity: 0.1;
+    margin-right: 20px;
+    width: 301px;
+    height: 100%;
+    object-fit: cover;
+}
+.uibk-js_error-msg h1 {
+    font-size: 100px;
+    font-weight: 300;
+    color: #444;
+}
+.uibk-js_error-msg h2{
+	color: #666;
+	font-weight: 300;
+}
+
+ul.UIBK-MENU {
+    margin-top: -15px;
+}
+ul.UIBK-MENU li {
+    display: inline-block;
+}
+ul.UIBK-MENU a {
+    font-size: 18px;
+    margin: 0 10px;
+}
+ul.UIBK-MENU a i {
+    margin-right: 5px;
+}
+ul.UIBK-MENU a i,
+ul.UIBK-MENU a span{
+	color: #333;
+	transform: .4s;
+}
+
+
+
+/* Liecens Page */
+.UIBK-License {
+    width: 700px;
+    background: #fff;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 1px 15px rgba(162, 156, 156, 0.1);
+}
+
+.UIBK-License-Title {
+    color: #0366d6;
+    font-weight: 400;
+    margin: 30px 0 2px 0;
+}
+.UIBK-License-Title:first-child{
+	margin-top: 0;
+}
+.x1{font-size:25px;}
+.x2{font-size:20px;}
+.x3{font-size:15px;}
+
+.UIBK-NEW-Line{
+	margin: 10px 0;
+}
+
+.UIBK-License-Content {
+    color: #555;
+    font-size: 15px;
+    line-height: 25px;
+}
+.UIBK-License-Content a {
+	color: #0366d6;
+	font-weight: 600;
+}
+.UIBK-Page-HEADER {
+    text-align: right;
+}
+.UIBK-Page-HEADER a {
+    float: left;
+    transition: .4s;
+}
+.UIBK-Page-HEADER a:hover{
+	color: #0366d6;
+}
+.UIBK-Page-HEADER span {
+    color: #999;
+}
+
+
+
+/* 
+* Responsive Code
+* Phone & Tablet is Same Design Configration :) 
+*/
+@media only screen and (max-width: 768px) {
+    .UIBKContent-Price{width: 95%;text-align: center;}
+    .UIBKCryptoCurrency {float: unset;width: fit-content;border: unset;display: inline-flex;}
+    .UIBK-License{width: 70%;}
+}
